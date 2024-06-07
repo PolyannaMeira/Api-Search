@@ -1,0 +1,106 @@
+/* Estilos básicos para o corpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estiliza a contêiner para centralizar a tabela */
+.container {
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Estiliza a entrada de filtro */
+#filter-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Estiliza o botão de ordenação */
+#sort-button {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+#sort-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estiliza a tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: left;
+}
+
+table th {
+    background-color: #007BFF;
+    color: white;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estiliza os controles de paginação */
+#pagination-controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+#pagination-controls button {
+    padding: 10px 15px;
+    border: 1px solid #007BFF;
+    background-color: white;
+    color: #007BFF;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#pagination-controls button:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+#pagination-controls button.active {
+    background-color: #007BFF;
+    color: white;
+}
+
+#pagination-controls button:disabled {
+    background-color: #ddd;
+    color: white;
+    cursor: not-allowed;
+}

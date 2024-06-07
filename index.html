@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Organizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="filter-input" placeholder="Filter by title">
+        <button id="submit-btn">Search</button>
+        <button id="toggle-sort-btn">Toggle Sort</button>
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Release Date</th>
+                    <th>Season</th>
+                    <th>Episode</th>
+                </tr>
+            </thead>
+            <tbody id="data-container">
+                <!-- Data rows will be inserted here -->
+            </tbody>
+        </table>
+        <div id="pagination-controls"></div>
+    </div>
+    <script type="module" src="./script.js/init.js"></script>
+</body>
+</html>
